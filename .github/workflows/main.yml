@@ -15,5 +15,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "pondecy" --password-stdin
-        docker image build -t lalitaly/docker2:latest .
-        docker push lalitaly/docker2:latest
+        docker image build -t lalitaly/docker:latest .
+        docker push lalitaly/docker:latest
